@@ -1,0 +1,22 @@
+'.text.html.liquid':
+  'case':
+    'prefix': 'lca'
+    'body': '{% case  ${1:variable} %}\n\n   {% when \'${2:matching?}\' %}\n\t${3}\n\n{% endcase %}'
+  'content_for_layout':
+    'prefix': 'lcfl'
+    'body': '{{ content_for_layout }}'
+  'cycle':
+    'prefix': 'lcy'
+    'body': '{% cycle \'${1:first value}\', \'${2:second value}\' %}'
+  'for':
+    'prefix': 'lfor'
+    'body': '{% for ${1:element} in ${2:collection} %}\n\t${3}\n{% endfor %}'
+  'if...else...':
+    'prefix': 'lif'
+    'body': '{% if  ${1:condition} %}\n  ${2:what to do}\n{% else %}\n  ${3:what to do else}\n{% endif %}\n'
+  'named cycle':
+    'prefix': 'lcg'
+    'body': '{% cycle \'${1:groupe name}\': \'${2:first value}\', \'${3:second value}\' %}'
+  'when':
+    'prefix': 'lcw'
+    'body': '{% when \'${1:matching?}\' %}\n\t${2:what to do} \n'
