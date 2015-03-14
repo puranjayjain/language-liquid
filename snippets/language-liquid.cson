@@ -17,6 +17,9 @@
   'if...else...':
     'prefix': 'lif'
     'body': '{% if  ${1:condition} %}\n  ${2:what to do}\n{% else %}\n  ${3:what to do else}\n{% endif %}\n'
+  'unless...':
+    'prefix': 'lun'
+    'body': '{% unless  ${1:condition} %}\n  ${2:what to do}\n{% endunless %}\n'
   'include':
     'prefix': 'lin'
     'body': '{% include ${1:include}.html %}'
