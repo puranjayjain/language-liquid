@@ -5,6 +5,9 @@
   'case':
     'prefix': 'lca'
     'body': '{% case  ${1:variable} %}\n\n   {% when \'${2:matching?}\' %}\n\t${3}\n\n{% endcase %}'
+  'content_for_header':
+    'prefix': 'lcfh'
+    'body': '{{ content_for_header }}'
   'content_for_layout':
     'prefix': 'lcfl'
     'body': '{{ content_for_layout }}'
@@ -29,6 +32,9 @@
   'when':
     'prefix': 'lcw'
     'body': '{% when \'${1:matching?}\' %}\n\t${2:what to do} \n'
+  'comment':
+    'prefix': 'lcm'
+    'body': '{% comment %}\n  ${2:what to do}\n{% endcomment %}\n'
 # this covers everything (almost) from https://shopify.github.io/liquid/
 '.source.gfm':
   # Basics > Introduction
