@@ -1,4 +1,7 @@
 '.text.html.liquid':
+  'block':
+    'prefix': '%'
+    'body': '{% ${1} %}'
   'case':
     'prefix': 'lca'
     'body': '{% case  ${1:variable} %}\n\n   {% when \'${2:matching?}\' %}\n\t${3}\n\n{% endcase %}'
