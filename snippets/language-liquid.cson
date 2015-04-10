@@ -14,6 +14,9 @@
   'if...else...':
     'prefix': 'lif'
     'body': '{% if  ${1:condition} %}\n  ${2:what to do}\n{% else %}\n  ${3:what to do else}\n{% endif %}\n'
+  'include':
+    'prefix': 'lin'
+    'body': '{% include ${1:include}.html %}'
   'named cycle':
     'prefix': 'lcg'
     'body': '{% cycle \'${1:groupe name}\': \'${2:first value}\', \'${3:second value}\' %}'
