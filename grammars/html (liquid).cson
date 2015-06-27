@@ -1,5 +1,6 @@
 'fileTypes': [
   'liquid'
+  'html'
 ]
 'foldingStartMarker': '(?x){%\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|collection|grouped|archive|item)[^(%})]+%}'
 'foldingStopMarker': '(?x){%\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endcollection|endgrouped|endarchive|enditem)[^(%})]+%}'
