@@ -1,12 +1,20 @@
 {
-  "name": "language-liquid",
-  "version": "0.4.0",
+  "name": "language-liquid-2",
+  "version": "0.0.0",
   "private": true,
-  "description": "Liquid language support for Atom.",
-  "repository": "https://github.com/kieranmasterton/language-liquid",
+  "description": "Fork of the original Liquid language support for Atom.",
+  "keywords": [
+    "language",
+    "liquid",
+    "shopify",
+    "blogs",
+    "markdown",
+    "gfm"
+  ],
+  "repository": "https://github.com/puranjayjain/language-liquid",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {}
 }
