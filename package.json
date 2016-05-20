@@ -1,6 +1,6 @@
 {
   "name": "language-liquid-2",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "private": true,
   "description": "Fork of the original Liquid language support for Atom.",
   "keywords": [
@@ -11,10 +11,24 @@
     "markdown",
     "gfm"
   ],
-  "repository": "https://github.com/puranjayjain/language-liquid",
+  "author": "Kieran Masterton <kieran@88mph.com> (https://github.com/kieranmasterton)",
+  "contributors": [
+    "David Calhoun (https://github.com/dcalhoun)",
+    "Brenton Horne (https://github.com/fusion809)",
+    "Sebastian Szturo (https://github.com/SebastianSzturo)",
+    "Matt Mischuk (https://github.com/mattmischuk)",
+    "Puranjay Jain (https://github.com/puranjayjain)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puranjayjain/language-liquid"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/puranjayjain/language-liquid/issues"
   },
   "dependencies": {}
 }
