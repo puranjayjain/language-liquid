@@ -1,6 +1,6 @@
 {
   "name": "language-liquid",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": true,
   "description": "Fork of the original Liquid language support for Atom.",
   "keywords": [
