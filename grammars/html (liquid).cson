@@ -63,8 +63,10 @@
   'template_tag_name':
     'patterns': [
       {
-        'match': '(?<={%)\\s*(\\w+)'
-        'name': 'entity.name.tag.liquid'
+        'captures':
+          '2':
+            'name': 'entity.name.tag.liquid'
+        'match': '((?<={%)\\s*(\\w+))'
       }
     ]
   'template_var':
