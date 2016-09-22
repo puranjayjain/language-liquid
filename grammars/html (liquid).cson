@@ -134,7 +134,7 @@
         'name': 'string.quoted.single.liquid'
       }
       {
-        'match': '(-|\\+)?\\s*[0-9]+(\\.[0-9]+)?'
+        'match': '([-+]?[0-9]+(\\.[0-9]+)?)'
         'name': 'constant.numeric.liquid'
       }
       {
