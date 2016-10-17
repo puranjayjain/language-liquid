@@ -1,0 +1,13 @@
+'fileTypes': [
+  'scss.liquid'
+]
+'name': 'SCSS (Liquid)'
+'patterns': [
+  {
+    'include': 'text.html.liquid'
+  }
+  {
+    'include': 'source.css.scss'
+  }
+]
+'scopeName': 'source.css.scss.liquid'
