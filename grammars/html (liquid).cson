@@ -7,13 +7,13 @@
 'name': 'HTML (Liquid)'
 'patterns': [
   {
-    'begin': '{%\\s*comment\\s*%}'
-    'end': '{%\\s*endcomment\\s*%}'
+    'begin': '({%-*)\\s*comment\\s(-*%})'
+    'end': '({%-*)\\s*endcomment\\s(-*%})'
     'name': 'comment.block.liquid'
   }
   {
-    'begin': '{{'
-    'end': '}}'
+    'begin': '({{-*)'
+    'end': '(-*}})'
     'name': 'punctuation.output.liquid'
     'patterns': [
       {
@@ -22,8 +22,8 @@
     ]
   }
   {
-    'begin': '{%'
-    'end': '%}'
+    'begin': '({%-*)'
+    'end': '(-*%})'
     'name': 'punctuation.tag.liquid'
     'patterns': [
       {
