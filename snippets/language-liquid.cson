@@ -1,40 +1,31 @@
 '.text.html.liquid':
   'block':
     'prefix': '%'
-    'body': '{% ${1} %}'
+    'body': '{%- ${1} -%}'
   'case':
     'prefix': 'lca'
-    'body': '{% case  ${1:variable} %}\n\n   {% when \'${2:matching?}\' %}\n\t${3}\n\n{% endcase %}'
-  'content_for_header':
-    'prefix': 'lcfh'
-    'body': '{{ content_for_header }}'
+    'body': '{%- case  ${1:variable} -%}\n\n   {%- when \'${2:matching?}\' -%}\n\t${3}\n\n{%- endcase -%}'
   'content_for_layout':
     'prefix': 'lcfl'
     'body': '{{ content_for_layout }}'
   'cycle':
     'prefix': 'lcy'
-    'body': '{% cycle \'${1:first value}\', \'${2:second value}\' %}'
+    'body': '{%- cycle \'${1:first value}\', \'${2:second value}\' -%}'
   'for':
     'prefix': 'lfor'
-    'body': '{% for ${1:element} in ${2:collection} %}\n\t${3}\n{% endfor %}'
+    'body': '{%- for ${1:element} in ${2:collection} -%}\n\t${3}\n{%- endfor -%}'
   'if...else...':
     'prefix': 'lif'
-    'body': '{% if  ${1:condition} %}\n  ${2:what to do}\n{% else %}\n  ${3:what to do else}\n{% endif %}\n'
-  'unless...':
-    'prefix': 'lun'
-    'body': '{% unless  ${1:condition} %}\n  ${2:what to do}\n{% endunless %}\n'
+    'body': '{%- if  ${1:condition} -%}\n  ${2:what to do}\n{%- else -%}\n  ${3:what to do else}\n{%- endif -%}\n'
   'include':
     'prefix': 'lin'
-    'body': '{% include ${1:include}.html %}'
+    'body': '{%- include ${1:include}.html -%}'
   'named cycle':
     'prefix': 'lcg'
-    'body': '{% cycle \'${1:groupe name}\': \'${2:first value}\', \'${3:second value}\' %}'
+    'body': '{%- cycle \'${1:groupe name}\': \'${2:first value}\', \'${3:second value}\' -%}'
   'when':
     'prefix': 'lcw'
-    'body': '{% when \'${1:matching?}\' %}\n\t${2:what to do} \n'
-  'comment':
-    'prefix': 'lcm'
-    'body': '{% comment %}\n  ${2:what to do}\n{% endcomment %}\n'
+    'body': '{%- when \'${1:matching?}\' %}\n\t${2:what to do} \n'
 # this covers everything (almost) from https://shopify.github.io/liquid/
 '.source.gfm':
   # Basics > Introduction
