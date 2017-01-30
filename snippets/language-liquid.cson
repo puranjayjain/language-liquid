@@ -1,4 +1,4 @@
-'.text.html.liquid':
+'.text.html.liquid, source.gfm':
   'block':
     'prefix': '%'
     'body': '{%- ${1} -%}'
@@ -27,7 +27,7 @@
     'prefix': 'lcw'
     'body': '{%- when \'${1:matching?}\' %}\n\t${2:what to do} \n'
 # this covers everything (almost) from https://shopify.github.io/liquid/
-'.source.gfm':
+'.source.gfm, .text.html.liquid':
   # Basics > Introduction
   'Objects':
     'prefix': '{{'
