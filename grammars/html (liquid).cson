@@ -84,7 +84,7 @@
         'name': 'invalid.illegal.filter.liquid'
       }
       {
-        'match': '(false|true|nil)'
+        'match': '(false|true|nil|null|empty|blank)'
         'name': 'constant.language.liquid'
       }
       {
