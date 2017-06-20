@@ -66,7 +66,7 @@
         'captures':
           '2':
             'name': 'entity.name.tag.liquid'
-        'match': '((?<={%)-?\\s*(\\w+))'
+        'match': '(((?<={%)|(?<={%-))\\s*(\\w+))'
       }
     ]
   'template_var':
@@ -91,7 +91,7 @@
         'captures':
           '3':
             'name': 'invalid.illegal.operator.liquid'
-        'match': '(?=if|unless|elsif)\\s*[^-%}]+\\s(in)\\s'
+        'match': '(?=if|unless|elsif)\\s*[^%}]+\\s(in)\\s'
       }
       {
         'match': '\\s+(and|or|not|contains|in|by|((\\!|\\=|\\<|\\>)\\=))\\s+'
