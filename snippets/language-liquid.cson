@@ -90,6 +90,12 @@
     'body': '${1:string} contains {2:substring}'
     'description': 'contains checks for the presence of a substring inside a string.'
     'descriptionMoreURL': 'https://shopify.github.io/liquid/basics/operators/#contains'
+  # Tags > Comment
+  'comment':
+    'prefix': 'com'
+    'body': '{%- comment %}\n\tThis is a foo\n{% endcomment -%}'
+    'description': 'Allows you to leave un-rendered code inside a Liquid template. Any text within the opening and closing comment blocks will not be output, and any Liquid code within will not be executed.'
+    'descriptionMoreURL': 'https://shopify.github.io/liquid/tags/comment/'
   # Tags > Control flow
   'case':
     'prefix': 'case'
