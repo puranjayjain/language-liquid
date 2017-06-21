@@ -2,8 +2,8 @@
   'liquid'
   'html'
 ]
-'foldingStartMarker': '(?x){%-?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|collection|grouped|archive|item)[^(%})]+-?%}'
-'foldingStopMarker': '(?x){%-?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endcollection|endgrouped|endarchive|enditem)[^(%})]+-?%}'
+'foldingStartMarker': '(?x){%-?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|schema|stylesheet|javascript)[^(%})]+-?%}'
+'foldingStopMarker': '(?x){%-?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endschema|endstylesheet|endjavascript)[^(%})]+-?%}'
 'name': 'HTML (Liquid)'
 'patterns': [
   {
@@ -140,12 +140,20 @@
         'name': 'constant.numeric.liquid'
       }
       {
-        'match': '\\b(collection|product|linklist|linklists|order|link|customer|customer_address|line_item|shop|collections|page_title|template|image|blog|blogs|cart|pages|theme|themes|variant|items|comment|forloop|settings)\\b'
+        'match': '\\b(break|continue|cycle|assign|increment|decrement|include|form|layout|highlight|highlight_active|json|join|sort|ceil|divided_by|floor|minus|plus|round|times|modulo|money|money_with_currency|money_without_trailing_zeros|money_without_currency|append|camelcase|capitalize|downcase|escape|handleize|md5|newline_to_br|pluralize|prepend|remove|remove_first|replace|replace_first|slice|split|strip|lstrip|rstrip|strip_html|strip_newlines|truncate|truncatewords|uniq|upcase|url_escape|url_param_escape)\\b'
+        'name': 'support.function.liquid'
+      }
+      {
+        'match': '\\b(all_products|canonical_url|current_page|linklists|handle|pages|page_description|page_title|request|scripts|settings|template|article|cart|collection|country_option_tags|customer_address|discount|form|gift_card|link|order|paginate|search|shop|tax_line|transaction|address|blog|checkout|comment|current_tags|customer|forloop|fulfillment|line_item|linklist|page|product|shipping_method|tablerow|theme|variant|map)\\b'
         'name': 'support.class.liquid'
       }
       {
-        'match': '\\b(assets|author|body|body_raw|current|date|excerpt_raw|meta|next|pages|parent|posts|previous|site|tags|taxonomy|title|url)\\b'
-        'name': 'support.class.liquid'
+        'match': '\\b(date|weight_with_unit|index|size|asset_img_url|asset_url|file_img_url|file_url|img_url|product_img_url|url_for_type|url_for_vendor|link_to|link_to_vendor|link_to_type|link_to_tag|link_to_add_tag|link_to_remove_tag)\\b'
+        'name': 'support.variable.liquid'
+      }
+      {
+        'match': '\\b(default|default_errors|default_pagination|first|last|script_tag|stylesheet_tag|img_tag|customer_login_link|global_asset_url|payment_type_img_url|shopify_asset_url)\\b'
+        'name': 'support.constant.liquid'
       }
       {
         'match': '((?<=\\w\\:\\s)\\w+)'
