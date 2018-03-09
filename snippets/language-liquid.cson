@@ -196,7 +196,7 @@
     'descriptionMoreURL': 'https://shopify.github.io/liquid/tags/variable/#assign'
   'capture':
     'prefix': 'capture'
-    'body': '{% capture ${1:variable} %}'
+    'body': '{% capture ${1:variable} %}$2{% endcapture %}'
     'description': 'Captures the string inside of the opening and closing tags and assigns it to a variable. Variables created through {% capture %} are strings.'
     'descriptionMoreURL': 'https://shopify.github.io/liquid/tags/variable/#capture'
   'increment':
