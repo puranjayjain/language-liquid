@@ -506,11 +506,6 @@
     'body': 'jsonify'
     'description': 'Convert Hash or Array to JSON.'
     'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'sort':
-    'prefix': 'sort'
-    'body': 'sort'
-    'description': 'Sort an array. Optional arguments for hashes: 1. property name 2. nils order (first or last).'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
   'sample':
     'prefix': 'sample'
     'body': 'sample'
