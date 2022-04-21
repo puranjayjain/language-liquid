@@ -1,0 +1,13 @@
+'fileTypes': [
+  'js.liquid'
+]
+'name': 'JS (Liquid)'
+'patterns': [
+  {
+    'include': 'text.html.liquid'
+  }
+  {
+    'include': 'source.js'
+  }
+]
+'scopeName': 'source.js.liquid'
